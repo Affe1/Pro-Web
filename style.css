@@ -1,0 +1,75 @@
+.navbar {
+    grid-column: 2;
+    width: 100%;
+   
+    overflow: auto;
+   
+    border-bottom:2px solid #fff;
+  }
+  html{
+    
+    scroll-behavior: smooth;
+    overflow-y:scroll;
+    scrollbar-color: #777 #555555;
+ } 
+  
+  /* Navbar links */
+  .navbar a {
+    float: right;
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+    text-decoration: none;
+    font-size: 17px;
+   
+  }
+  .logo{
+    transition:  margin-top  2s;
+      margin-top: 2rem;
+      margin-left:4rem;
+      
+  }
+  .nav{
+      display: grid;
+      position: sticky;
+      top:0;
+      background-color: white;
+  }
+  .inhalt{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color:hsl(40, 1%, 42%);
+   
+   
+   
+    margin-right: 2rem;
+    margin-left: 2rem;
+    
+    
+    margin-top: 4rem;
+}
+.inhalt h1{
+   text-align: center;
+  color: #E49482;
+  
+}
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    border-bottom:2px solid #777;
+  }
+  
+  /* Current/active navbar link */
+  
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+    .logo
+    { margin-top: 7rem;
+
+    }
+  }
