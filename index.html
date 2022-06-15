@@ -1,25 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="PRo Web.png">
-    <title>Pro Web</title>
-</head>
-<body>
-  <div class="nav">
-       <div class="logo">
-         <img src="PRo Web.png" alt="">
-       </div>
-       <div class="navbar">
-        <a id="eins" href="">Home</a><a id="zwei" href="">Über uns</a><a id="drei" href="">Kontakt</a><a id="vier" href="">Leistungen</a>
-        </div>
-    </div>
-    <div class="inhalt">
-        <h1>Willkommen</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum possimus non neque maxime natus veniam molestiae alias nulla voluptatem porro mollitia eveniet ea obcaecati delectus distinctio placeat incidunt, numquam blanditiis, animi consectetur. Nisi, fugiat dolore quis praesentium aliquid omnis reprehenderit suscipit, atque cum iure quam qui eligendi facilis fugit error deserunt. Eos aliquam maiores sapiente optio corporis distinctio. Quis aliquam ratione provident aliquid adipisci ducimus laborum doloremque, tempora dolorem corporis mollitia cumque earum, rem at pariatur omnis vero dolor iure alias, rerum dolorum tenetur facere maxime fugiat? Nisi ea minus quidem quisquam vero rem quo, impedit hic libero dicta labore delectus nesciunt sunt iste assumenda! Expedita sequi enim harum ullam eaque dolor ipsam dolorem delectus inventore voluptatem esse, at sed itaque quibusdam. Impedit, quod quis illum, nam consequatur exercitationem reprehenderit at blanditiis ratione natus provident itaque voluptate voluptatibus quidem iure, accusantium velit animi laudantium eaque tenetur quo enim sint laboriosam aspernatur. Quas minima quisquam quia sit beatae commodi error perferendis similique, nisi illo sapiente temporibus, porro blanditiis! Quaerat id, voluptates cum quo sunt tenetur eveniet perferendis atque qui libero optio delectus natus a necessitatibus consequatur perspiciatis, ducimus quos nemo ea fugit! Ducimus reiciendis laudantium temporibus id animi, maiores pariatur quo.</p>
-     </div>
-</body>
+
+<html> 
+
+<body> 
+
+    <script> 
+
+        /* Storing user's device details in a variable*/ 
+
+        let details = navigator.userAgent; 
+
+  
+
+        /* Creating a regular expression  
+
+        containing some mobile devices keywords  
+
+        to search it in details string*/ 
+
+        let regexp = /android|iphone|kindle|ipad/i; 
+
+  
+
+        /* Using test() method to search regexp in details 
+
+        it returns boolean value*/ 
+
+        let isMobileDevice = regexp.test(details); 
+
+  
+
+        if (isMobileDevice) { 
+
+            document.write("You are using a Mobile Device"); 
+
+        } else { 
+
+            document.write("You are using Desktop"); 
+
+        } 
+
+    </script> 
+
+</body> 
+
 </html>
